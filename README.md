@@ -15,7 +15,7 @@ Clone this repository to your local machine using the following command:
 
 ```shell
 git clone https://github.com/benjamindavisdc/DockerInfrastructureFiles.git
-'''
+```
 
 # 2. Build the Apache Web Server Container
 Navigate to the apache-web-server folder and build the Apache web server container using the provided Dockerfile. Execute the following command:
