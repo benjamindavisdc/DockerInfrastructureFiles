@@ -1,0 +1,14 @@
+Build the Docker image using the following command in the same directory as the Dockerfile:
+
+
+docker build -t my-apache-server .
+
+The -t flag assigns a tag to the image. Replace my-apache-server with your preferred tag name.
+Once the build process completes, you can run a container based on the image using the following command:
+
+
+docker run -d -p 80:80 my-apache-server
+
+The -d flag runs the container in detached mode.
+The -p flag maps port 80 of the container to port 80 of the host machine, allowing you to access the web server at http://localhost.
+You should now be able to access the Apache web server running inside the Docker container by visiting http://localhost in your web browser.
