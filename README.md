@@ -13,26 +13,26 @@ To set up the web development environment using this repository, follow the step
 # 1. Clone the Repository
 Clone this repository to your local machine using the following command:
 
-'''bash
+```shell
 git clone https://github.com/benjamindavisdc/DockerInfrastructureFiles.git
 '''
 
 # 2. Build the Apache Web Server Container
 Navigate to the apache-web-server folder and build the Apache web server container using the provided Dockerfile. Execute the following command:
 
-'''bash
+```shell
 cd apache-web-server
 docker build -t apache-web-server .
-'''
+```
 This command will build the Docker image for the Apache web server and tag it as apache-web-server.
 
 # 3. Build the Jenkins Container
 Navigate to the jenkins-container folder and build the Jenkins container using the provided Dockerfile. Run the following command:
 
-'''bash
+```shell
 cd ../jenkins-container
 docker build -t jenkins-container .
-'''
+```
 This command will build the Docker image for Jenkins and tag it as jenkins-container.
 
 # 4. Configure Jenkins Pipeline
@@ -41,11 +41,11 @@ The Jenkinsfile in the jenkins-container folder defines a pipeline for deploying
 # 5. Run the Linux VM Startup Script
 Navigate to the linux-vm-startup-script folder and run the startup script on your Linux VM. Execute the following command:
 
-'''bash
+```shell
 cd ../linux-vm-startup-script
 chmod +x startup-script.sh
 ./startup-script.sh
-'''
+```
 This script automates the installation of Docker and the creation of Docker images and containers for the Apache web server and Jenkins.
 
 # Conclusion
